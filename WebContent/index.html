@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- stop zoom -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Koni">
+<link rel="shortcut icon" href="./img/favicon.ico">
+<title>LocalTV</title>
+<link rel="stylesheet" href="lib/jquery/jquery.mobile-1.3.2.min.css" />
+<script type="text/javascript" src="lib/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript"
+	src="lib/jquery/jquery.mobile-1.3.2.min.js"></script>
+<script type="text/javascript" src="lib/modernizr/modernizr.js"></script>
+
+<script type="text/javascript" src="js/inheritance.js"></script>
+<!-- Eigene JS-Bibliotheken -->
+
+
+<script type="text/javascript" src="js/model.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+<!-- <script type="text/javascript" src="js/main.js"></script> -->
+<script type="text/javascript" src="http://m.rothconsulting.com/LocalTV/js/main.js"></script>
+</head>
+
+<style>
+ .my_icon_wrapper {
+        /*float: left; 
+        text-align: center;*/ 
+        vertical-align: middle; 
+        height: 32px;
+}
+
+.ui-li-thumb, .ui-li-icon {
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    left:10px; 
+    margin:auto; 
+    max-height:70px; 
+    max-width:70px;
+}
+</style>
+
+<body>
+
+	<!--------------------------------------------------------------------------------------------------------->
+	<!-- PAGE List -->
+	<!--------------------------------------------------------------------------------------------------------->
+	<div data-role="page" id="page-list" data-title="LocalTV">
+
+		<!---------------------------------------------------------------------------------------------->
+		<!-- HEADER -->
+		<!---------------------------------------------------------------------------------------------->
+		<div data-role="header" class="ui-header ui-bar-c" data-icon="delete">
+			<h1>LocalTV</h1>
+			<img src="img/localtv.png" width="30" class="ui-btn-right"/>
+		</div>
+		<!-- /header -->
+
+		<!---------------------------------------------------------------------------------------------->
+		<!-- CONTENT -->
+		<!---------------------------------------------------------------------------------------------->
+		<div data-role="content">
+
+			<!---------------------------------------------------------------->
+			<!-- Stations - Details - collapsible-set / collapsible / -->
+			<!---------------------------------------------------------------->
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="d" data-inset="true">
+
+				<!---------------------------------------------------------------->
+				<!-- Stations CH -->
+				<!---------------------------------------------------------------->
+				<div data-role="collapsible" data-collapsed="true">
+
+					<h3>Schweiz</h3>
+					<ul id="stationListCH" data-role="listview" data-inset="true">		
+
+					</ul>
+
+				</div>
+				<!---------------------------------------------------------------->
+				<!-- Stations DE -->
+				<!---------------------------------------------------------------->
+				<div data-role="collapsible">
+
+					<h3>Deutschland</h3>
+					<ul id="stationListDE" data-role="listview" data-inset="true">		
+
+				</div>
+				<!---------------------------------------------------------------->
+				<!-- Stations AT -->
+				<!---------------------------------------------------------------->
+				<div data-role="collapsible">
+
+					<h3>Österreich</h3>
+					<ul id="stationListAT" data-role="listview" data-inset="true">		
+
+				</div>
+
+				<!---------------------------------------------------------------->
+				<!-- Stations other -->
+				<!---------------------------------------------------------------->
+				<div data-role="collapsible">
+
+					<h3>Diverse</h3>
+					<ul id="stationListDiv" data-role="listview" data-inset="true">		
+
+				</div>
+
+			</div>
+			<!-- /collapsible-set -->
+
+		</div>
+		<!-- /content -->
+
+		<!---------------------------------------------------------------------------------------------->
+		<!-- FOOTER -->
+		<!---------------------------------------------------------------------------------------------->
+		<div data-role="footer" class="ui-footer ui-bar-c" role="contentinfo">
+
+			<h6>&copy; 2013 by Koni</h6>
+
+		</div>
+		<!-- /footer -->
+
+	</div>
+	<!-- /page -->
+
+</body>
+
+</html>
