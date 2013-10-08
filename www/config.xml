@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="mobi.koni.localtv" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>LocalTV</name>
+    <description>
+        Local TV stations.
+    </description>
+    <author email="app@koni.mobi" href="http://koni.mobi">
+        Koni
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <icon src="icon.png" /><!-- default; don't change location! -->
+    
+    <!-- Here is the section for iOS, how I use it in my PhoneGap Build projects. -->
+    
+    <icon src="icon.png" /><!-- default; don't change location! -->
+<!--     <icon src="icons/ios/localtv-57.png" gap:platform="ios" width="57" height="57" /> -->
+<!--     <icon src="icons/ios/localtv-72.png" gap:platform="ios" width="72" height="72" /> -->
+<!--     <icon src="icons/ios/localtv-114.png" gap:platform="ios" width="114" height="114" /> -->
+<!--     <icon src="icons/ios/localtv-144.png" gap:platform="ios" width="144" height="144" /> -->
+</widget>
