@@ -68,7 +68,7 @@ LocalTVApp.stations.createStation("./img/dresden_tv.png", "Dresden Fernsehen", "
 LocalTVApp.stations.createStation("./img/sachsen_fernsehen.png", "Sachsen Fernsehen", "http://video01.kanal8.de:1935/sachsenfernsehenlive/mobile/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/leipzig_tv.png", "Leipzig Fernsehen", "http://video61.kanal8.de:1935/leipzigfernsehenlive/livestream/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/oberfranken_tv.png", "TV Oberfranken", "http://tvoberfranken.iptv-playoutcenter.de:1935/tvoberfranken/tvoberfranken_1/playlist.m3u8", "DE");
-//LocalTVApp.stations.createStation("./img/oberfranken_tv.png", "TV Oberfranken 2", "http://tvoberfranken.iptv-playoutcenter.de:1935/tvoberfranken/tvoberfranken_2/playlist.m3u8", "DE");
+// LocalTVApp.stations.createStation("./img/oberfranken_tv.png", "TV Oberfranken 2", "http://tvoberfranken.iptv-playoutcenter.de:1935/tvoberfranken/tvoberfranken_2/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/franken_fernsehen.png", "Franken TV", "http://frankentv.iptv-playoutcenter.de:1935/frankentv/frankentv.stream_1/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/bw_family.png", "BW Family TV", "http://www.bwfamily.tv/iphone", "DE");
 LocalTVApp.stations.createStation("./img/light_channel.png", "Light Channel TV", "http://streamer1.streamhost.org:1935/salive/lctvde/playlist.m3u8", "DE");
@@ -76,6 +76,24 @@ LocalTVApp.stations.createStation("./img/tv_touring.png", "TV Touring Würzburg"
 LocalTVApp.stations.createStation("./img/tv_touring.png", "TV Touring Schweinfurt", "http://tvtourings.iptv-playoutcenter.de:1935/tvtourings/tvtourings.stream_2/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/fan_tv.png", "Fan TV", "http://fan.iptv-playoutcenter.de:1935/fan/fan.stream_1/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/filstalwelle.png", "Filstalwelle", "http://62.113.210.27/filstalwelle-live/_definst_/mp4:livestream/playlist.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/ndr.png", "NDR Hamburg", "http://ndr_fs-lh.akamaihd.net/i/ndrfs_hh@119223/master.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/ndr.png", "NDR Meklenburg Vorpommern", "http://ndr_fs-lh.akamaihd.net/i/ndrfs_mv@119226/master.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/ndr.png", "NDR Schleswig Holstein", "http://ndr_fs-lh.akamaihd.net/i/ndrfs_sh@119225/master.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/ndr.png", "NDR Niedersachsen", "http://ndr_fs-lh.akamaihd.net/i/ndrfs_nds@119224/master.m3u8", "DE");
+LocalTVApp.stations
+		.createStation("./img/br.png", "BR Rundschau News", "http://cdn-rsn-ios.br.de/i/br/bayerisches-fernsehen/rundschau/rsn100/rundschaunews_,0,A,.mp4.csmil/master.m3u8?__b__=200", "DE");
+LocalTVApp.stations.createStation("./img/br.png", "BR Rundschau Kultur", "http://cdn-rsn-ios.br.de/i/br/bayerisches-fernsehen/rundschau/rsku/rundschaukultur_,0,A,.mp4.csmil/master.m3u8?__b__=200",
+		"DE");
+LocalTVApp.stations.createStation("./img/br.png", "BR Rundschau Wirtschaft",
+		"http://cdn-rsn-ios.br.de/i/br/bayerisches-fernsehen/rundschau/rswi/rundschauwirtschaft_,0,A,.mp4.csmil/master.m3u8?__b__=200", "DE");
+LocalTVApp.stations.createStation("./img/center.png", "Center TV Köln",
+		"http://x3282azmediac12001.f.l.z.lb.core-cdn.net/10894xkoeln/_definst_/12001centertvkoeln/live/3282azmedia/live_de_300/playlist.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/center.png", "Center TV Münster", "http://mf.centertv.c.nmdn.net/centertv/centertv.stream/playlist.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/deluxe.png", "Deluxe Music", "http://flash.cdn.deluxemusic.tv/deluxemusic.tv-live/web_850.stream/playlist.m3u8", "DE");
+
+// Wdr maus. http:// www.wdrmaus.de/aktuelle-sendung/
+// Ard tagesschau live stream. http:// www.tagesschau.de/templates/pages/multimedia/livestream_player.jsp
+// Kika plus net. http:// kikaplus.net/clients/kika/kikaplus/mobile/index.php
 
 // LocalTVApp.stations.createStation("./img/localtv.png", "Eurosport", "http://esioslive2-i.akamaihd.net/hls/live/200727/AL_ESP1_GER_DEU/playlist_1800.m3u8", "DE");
 // LocalTVApp.stations.createStation("./img/localtv.png", "Eurosport 2", "http://esioslive4-i.akamaihd.net/hls/live/200735/AL_ESP2_GER_DEU/playlist_1800.m3u8", "DE");
