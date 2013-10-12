@@ -1,9 +1,18 @@
+function alertBox(text) {
+	var iframe = document.createElement("IFRAME");
+	iframe.setAttribute("src", 'data:text/plain,');
+	document.documentElement.appendChild(iframe);
+	window.frames[0].window.alert(text);
+	iframe.parentNode.removeChild(iframe);
+}
+
 /* Get URL Parameter */
 function gup(name) {
 	name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
 	var regexS = "[\\?&]" + name + "=([^&#]*)";
 	var regex = new RegExp(regexS);
 	var results = regex.exec(window.location.href);
+	// alert(results);
 	if (results == null) {
 		return "";
 	} else {
@@ -17,7 +26,8 @@ function checkInternetConnection() {
 		// alert('connected');
 		return true;
 	} else {
-		alert('Sie sind nicht mit dem Internet verbunden!');
+		alertBox('Sie sind nicht mit dem Internet verbunden!');
+		// alert('Sie sind nicht mit dem Internet verbunden!');
 		return false;
 	}
 }

@@ -29,9 +29,13 @@
 <script type="text/javascript" src="js/model.js"></script>
 <script type="text/javascript" src="js/controller.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<!-- <script type="text/javascript" src="http://m.rothconsulting.com/LocalTV/js/main.js"></script> -->
-</head>
-
+<!-- <script type="text/javascript" src="http://localtv.koni.mobi/js/main.js"></script> -->
+<!-- Fix status bar problem with iOS7 -->
+<script type="text/javascript">
+if(navigator.userAgent.match(/iP[ha][od].*OS 7/)) {
+	document.write('<style type="text/css">body{-webkit-transform: translate3d(0,20px,0)}</style>');
+}
+</script>
 <style>
  .my_icon_wrapper {
         /*float: left; 
@@ -50,18 +54,18 @@
     max-width:70px;
 }
 </style>
-
-<body onload="getCountry();checkInternetConnection();">
+</head>
+<body onload="checkInternetConnection();">
 
 	<!--------------------------------------------------------------------------------------------------------->
-	<!-- PAGE List -->
+	<!-- Main PAGE List -->
 	<!--------------------------------------------------------------------------------------------------------->
 	<div data-role="page" id="page-list" data-title="LocalTV">
 
 		<!---------------------------------------------------------------------------------------------->
 		<!-- HEADER -->
 		<!---------------------------------------------------------------------------------------------->
-		<div data-role="header" class="ui-header ui-bar-c" data-icon="delete">
+		<div data-role="header" class="ui-header ui-bar-c">
 			<h1>LocalTV</h1>
 			<img src="img/localtv.png" width="30" class="ui-btn-right"/>
 		</div>
