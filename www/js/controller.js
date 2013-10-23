@@ -20,24 +20,21 @@ var LocalTVAppController = function() {
 
 			var theUrl = "";
 			if (stations[i].url.indexOf('.m3u8') != -1) {
-				theUrl = "javascript:openWhenConnected(\'" + stations[i].url + "\');";
+				theUrl = 'javascript:openWhenConnected(\'' + stations[i].url + '\');';
+				// theUrl = "javascript:openWhenConnected(\'" + stations[i].url + "\');";
 			} else {
-				theUrl = "website.html?url=" + encodeURIComponent(stations[i].url);
+				theUrl = 'javascript:openWhenConnected(\'website.html?url=' + encodeURIComponent(stations[i].url) + '\');';
+				// theUrl = "website.html?url=" + encodeURIComponent(stations[i].url);
 			}
 
-			$("#stationList" + country).append(
-					'<li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ' + ui_child
-							+ ' ui-btn-up-c" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c">' //
-							+ '<div class="ui-btn-inner ui-li">'//
-							+ '<div class="ui-btn-text">'//
-							+ '<a class="ui-link-inherit" href="' + theUrl + '" data-transition="slide">' //
-							+ '<img class="ui-li-thumb" src="' + stations[i].icon + '">' //
-							+ '<h2 class="ui-li-heading">' + stations[i].name + '</h2>'//
-							+ '</a>'//
-							+ '</div>' + '<span class="ui-icon ui-icon-arrow-r ui-icon-shadow"></span>'//
-							+ '</div>'//
-							+ '</li>');
+			$("#stationList" + country).append('<li data-theme="c">' //
+					+ '<a href="' + theUrl + '" data-transition="slide">'//
+					+ '<img class="ui-li-thumb" src="' + stations[i].icon + '">' //
+					+ '<h2 class="ui-li-heading">' + stations[i].name + '</h2>'//
+					+ '</a>'//
+					+ '</li>');
 		}
+		$('ul').listview('refresh');
 	}
 
 	return {

@@ -1,0 +1,12 @@
+AddType application/x-web-app-manifest+json .webapp
+AddType application/vnd.apple.mpegurl .m3u8
+AddType application/x-mpegURL .m3u8
+AddType video/ogg .ogv
+AddType video/ogg .ogg
+AddType video/webm .webm
+AddType audio/webm .weba
+AddType video/mp4 .mp4
+AddType video/mp4 .m4v
+AddType video/mp4 .f4v
+AddType video/mp4 .f4p
+AddType video/x-m4v .m4v
