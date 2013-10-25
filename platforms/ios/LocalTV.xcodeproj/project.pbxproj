@@ -54,7 +54,7 @@
 		FB69B6C9180B3C620010C93B /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = FB69B6B3180B3C620010C93B /* Icon-Small.png */; };
 		FB69B6CA180B3C620010C93B /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB69B6B4180B3C620010C93B /* Icon-Small@2x.png */; };
 		FB69B6CB180B3C620010C93B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB69B6B5180B3C620010C93B /* Icon.png */; };
-		FB69B6CC180B3C620010C93B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB69B6B6180B3C620010C93B /* Icon@2x.png */; };
+		FB69B6CC180B3C620010C93B /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB69B6B6180B3C620010C93B /* icon@2x.png */; };
 		FB69B6CD180B3C620010C93B /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = FB69B6B7180B3C620010C93B /* iTunesArtwork.png */; };
 		FB69B6CE180B3C620010C93B /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB69B6B8180B3C620010C93B /* iTunesArtwork@2x.png */; };
 		FB69B6D8180B3C7A0010C93B /* screen-ipad-landscape-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB69B6CF180B3C7A0010C93B /* screen-ipad-landscape-2x.png */; };
@@ -144,7 +144,7 @@
 		FB69B6B3180B3C620010C93B /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		FB69B6B4180B3C620010C93B /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		FB69B6B5180B3C620010C93B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		FB69B6B6180B3C620010C93B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		FB69B6B6180B3C620010C93B /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		FB69B6B7180B3C620010C93B /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		FB69B6B8180B3C620010C93B /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		FB69B6CF180B3C7A0010C93B /* screen-ipad-landscape-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen-ipad-landscape-2x.png"; sourceTree = "<group>"; };
@@ -352,7 +352,7 @@
 				FB69B6B3180B3C620010C93B /* Icon-Small.png */,
 				FB69B6B4180B3C620010C93B /* Icon-Small@2x.png */,
 				FB69B6B5180B3C620010C93B /* Icon.png */,
-				FB69B6B6180B3C620010C93B /* Icon@2x.png */,
+				FB69B6B6180B3C620010C93B /* icon@2x.png */,
 				FB69B6B7180B3C620010C93B /* iTunesArtwork.png */,
 				FB69B6B8180B3C620010C93B /* iTunesArtwork@2x.png */,
 			);
@@ -483,7 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F840E1F1165FE0F500CFE078 /* config.xml in Resources */,
-				FB69B6CC180B3C620010C93B /* Icon@2x.png in Resources */,
+				FB69B6CC180B3C620010C93B /* icon@2x.png in Resources */,
 				FB69B6BD180B3C620010C93B /* icon-50.png in Resources */,
 				FB69B6E0180B3C7A0010C93B /* screen-iphone-portrait.png in Resources */,
 				FB69B6CB180B3C620010C93B /* Icon.png in Resources */,
@@ -606,6 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -635,6 +636,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = LocalTV;
+				PROVISIONING_PROFILE = "00AC951A-B2AB-40A9-B5AD-CBEA88374D90";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -646,6 +648,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Koni Roth (74HLR36G4M)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalTV/LocalTV-Prefix.pch";
@@ -673,6 +677,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = LocalTV;
+				PROVISIONING_PROFILE = "00AC951A-B2AB-40A9-B5AD-CBEA88374D90";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

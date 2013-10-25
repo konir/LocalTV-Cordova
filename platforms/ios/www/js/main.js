@@ -18,7 +18,7 @@ LocalTVApp.stations.createStation("./img/tele_zueri.png", "Tele Züri", "http://
 LocalTVApp.stations.createStation("./img/tele1.png", "Tele 1",
 		"http://rrr.sz.xlcdn.com/?account=ZentralschweizerFernsehenTele1AG&file=live-mbr-2500&type=live&service=wowza&protocol=http&output=playlist.m3u8", "CH");
 LocalTVApp.stations.createStation("./img/tele_ostschweiz.png", "Tele Ostschweiz", "http://rtmp.infomaniak.ch/livecast/tvo/playlist.m3u8", "CH");
-LocalTVApp.stations.createStation("./img/srf_1.png", "SRF 1", "http://www.srf.ch/player/tv/videoembed?id=c4927fcf-e1a0-0001-7edd-1ef01d441651&autoplay=true", "CH");
+//LocalTVApp.stations.createStation("./img/srf_1.png", "SRF 1", "http://www.srf.ch/player/tv/videoembed?id=c4927fcf-e1a0-0001-7edd-1ef01d441651&autoplay=true", "CH");
 // LocalTVApp.stations.createStation("./img/srf_2.png", "SRF 2", "http://www.srf.ch/player/tv/videoembed?id=c49c1d64-9f60-0001-1c36-43c288c01a10&autoplay=true", "CH");
 // LocalTVApp.stations.createStation("./img/srf_info.png", "SRF Info", "http://www.srf.ch/player/tv/videoembed?id=c49c1d73-2f70-0001-138a-15e0c4ccd3d0&autoplay=true", "CH");
 LocalTVApp.stations.createStation("./img/telebielingue.png", "Tele Bielingue", "http://rtmp.infomaniak.ch/livecast/telebielinguech/playlist.m3u8", "CH");
@@ -109,7 +109,7 @@ LocalTVApp.stations.createStation("./img/red_bull_tv.png", "RedBull TV", "http:/
 // ----------------------------------------------------------------------
 
 LocalTVApp.stations.createStation("./img/suedtirol_tv.png", "Südtirol TV", "http://77.72.196.214:8554/live/SuedtirolTV/playlist.m3u8", "Div");
-LocalTVApp.stations.createStation("./img/nasa_tv.png", "NASA TV", "http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8", "Div");
+//LocalTVApp.stations.createStation("./img/nasa_tv.png", "NASA TV", "http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8", "Div");
 LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg USA", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/BnazlkNDpCIcD-QkfyZCQKlRiiFnVa5I/master.m3u8", "Div");
 LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg ASIA", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/w4dTdlNToKUvtqJ1WMDu5IuNP9as1iF0/master.m3u8", "Div");
 LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg EU", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/x0dDdlNTrs64I5H-29bfEFu4qeIira5r/master.m3u8", "Div");
