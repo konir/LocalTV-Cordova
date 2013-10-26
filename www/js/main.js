@@ -89,7 +89,7 @@ LocalTVApp.stations.createStation("./img/br.png", "BR Rundschau Wirtschaft",
 LocalTVApp.stations.createStation("./img/center.png", "Center TV Köln",
 		"http://x3282azmediac12001.f.l.z.lb.core-cdn.net/10894xkoeln/_definst_/12001centertvkoeln/live/3282azmedia/live_de_300/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/center.png", "Center TV Münster", "http://mf.centertv.c.nmdn.net/centertv/centertv.stream/playlist.m3u8", "DE");
-LocalTVApp.stations.createStation("./img/deluxe.png", "Deluxe music", "http://flash.cdn.deluxemusic.tv/deluxemusic.tv-live/web_850.stream/playlist.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/deluxe.png", "Deluxe Music", "http://flash.cdn.deluxemusic.tv/deluxemusic.tv-live/web_850.stream/playlist.m3u8", "DE");
 
 // Wdr maus. http:// www.wdrmaus.de/aktuelle-sendung/
 // Ard tagesschau live stream. http:// www.tagesschau.de/templates/pages/multimedia/livestream_player.jsp

@@ -73,7 +73,19 @@ if(navigator.userAgent.match(/iP[ha][od].*OS 7/)) {
         <!---------------------------------------------------------------------------------------------->
         <div data-role="content">
 
-  			<iframe name="frame" width="100%" height="100%" src="http://www.srf.ch/player/tv/videoembed?id=c4927fcf-e1a0-0001-7edd-1ef01d441651&autoplay=true"></iframe>
+			<script type="text/javascript">
+				var streamURL = gup('url');
+				var auto = gup('autoplay');
+				var autoplay = '';
+					if (auto != '' && auto != null && auto != 'undefined'){
+						autoplay = '&autoplay='+auto;
+					}
+				//alert('URL = '+streamURL);
+				//alert('autoplay = '+autoplay);
+				var w=window.innerWidth-10;
+				var h=window.innerHeight-70;
+				document.write('<iframe frameborder="0" allowtransparency="true" border="0" width="'+w+'" height="'+h+'" src="'+streamURL+autoplay+'"></iframe>');
+			</script>
 		
         </div><!-- /content -->
 
