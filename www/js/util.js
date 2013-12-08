@@ -76,3 +76,26 @@ function isUserAgent(userAgentString) {
 	}
 	return false;
 }
+
+// function alertBox(text) {
+// var iframe = document.createElement("IFRAME");
+// iframe.setAttribute("src", 'data:text/plain,');
+// document.documentElement.appendChild(iframe);
+// window.frames[0].window.alert(text);
+// iframe.parentNode.removeChild(iframe);
+// }
+
+function getCountry() {
+	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position) {
+			$.getJSON('http://ws.geonames.org/countryCode', {
+				lat : position.coords.latitude,
+				lng : position.coords.longitude,
+				type : 'JSON'
+			}, function(result) {
+				// alert(result.countryName);
+				return result.countryName;
+			});
+		});
+	}
+}
