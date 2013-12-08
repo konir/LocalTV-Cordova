@@ -44,7 +44,12 @@ function openSiteWhenConnected(theUrl) {
 	if (checkInternetConnection()) {
 
 		if (theUrl.indexOf("m3u8") > -1) {
-			location.href = theUrl;
+			if (!isAndroidOS() && !isAppleMobile()) {
+				location.href = 'player/index.html?stream=' + theUrl;
+			} else {
+				location.href = theUrl;
+			}
+
 		} else {
 			location.href = 'website.html?url=' + theUrl;
 		}

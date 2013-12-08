@@ -34,29 +34,45 @@ function doesConnectionExist() {
 		xhr.send();
 
 		if (xhr.status >= 200 && xhr.status < 304) {
-			alert('Connected !!!');
+			// alert('Connected !!!');
 			return true;
 		} else {
-			alert('NOT Connected !!!');
+			// alert('NOT Connected !!!');
 			return false;
 		}
 	} catch (e) {
-		alert('NOT Connected - with exception !!: ' + e);
+		// alert('NOT Connected - with exception !!: '+e);
 		return false;
 	}
 }
 
-function getCountry() {
-	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(function(position) {
-			$.getJSON('http://ws.geonames.org/countryCode', {
-				lat : position.coords.latitude,
-				lng : position.coords.longitude,
-				type : 'JSON'
-			}, function(result) {
-				//alert(result.countryName);
-				return result.countryName;
-			});
-		});
+function isFirefoxOS() {
+	return isUserAgent("Mozilla/5.0 (Mobile; rv:");
+}
+function isWindowsPhone() {
+	return isUserAgent("Windows Phone");
+}
+function isAndroidOS() {
+	return isUserAgent("Android");
+}
+function isIPhone() {
+	return isUserAgent("iPhone");
+}
+function isIPod() {
+	return isUserAgent("iPod");
+}
+function isIPad() {
+	return isUserAgent("iPad");
+}
+function isAppleMobile() {
+	return isIPhone() || isIPod() || isIPad();
+}
+
+function isUserAgent(userAgentString) {
+	var userAgent = navigator.userAgent;
+	// alert(userAgent);
+	if (userAgent.indexOf(userAgentString) != -1) {
+		return true;
 	}
+	return false;
 }
