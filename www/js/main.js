@@ -95,10 +95,9 @@ LocalTVApp.stations.createStation("./img/center.png", "Center TV Köln",
 LocalTVApp.stations.createStation("./img/center.png", "Center TV Münster", "http://mf.centertv.c.nmdn.net/centertv/centertv.stream/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/deluxe.png", "Deluxe Music", "http://flash.cdn.deluxemusic.tv/deluxemusic.tv-live/web_850.stream/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/maus.png", "Sendung mit der Maus", "http://www.wdrmaus.de/aktuelle-sendung", "DE");
-
-// Ard tagesschau live stream. http:// www.tagesschau.de/templates/pages/multimedia/livestream_player.jsp
-// Kika plus net. http:// kikaplus.net/clients/kika/kikaplus/mobile/index.php
-// Mühlviertel tv. http:// www.navixtreme.com/wiilist/116912/asewas.plx
+LocalTVApp.stations.createStation("./img/kika.png", "KiKa", "http://kikaplus.net/clients/kika/player/tvplayer.php", "DE");
+LocalTVApp.stations.createStation("./img/ard_tagesschau.png", "ARD tagesschau.de (Live)", "http://www.tagesschau.de/templates/pages/multimedia/livestream_player.jsp", "DE");
+LocalTVApp.stations.createStation("./img/ard_tagesschau.png", "ARD Tagesschau in 100 Sekunden", "http://www.tagesschau.de/multimedia/video/video1360904~player_autoplay-true.html", "DE");
 
 // ----------------------------------------------------------------------
 // Österreich
