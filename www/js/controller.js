@@ -14,6 +14,11 @@ var LocalTVAppController = function() {
 
 			country = stations[i].country;
 
+			if (!isMobileDevice() && excludeArray.indexOf(stations[i].name) > -1) {
+				console.log("***** excludeArray contains " + stations[i].name);
+				continue;
+			}
+
 			$("#stationList" + country).append('<li id="list' + i + '">' + //
 			'<a data-role="button" data-transition="slide" onclick="openSiteWhenConnected(\'' + stations[i].url + '\')" href="#" id="link' + i + '">' + //
 			'<img src="' + stations[i].icon + '">' + //

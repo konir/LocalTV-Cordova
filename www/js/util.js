@@ -46,6 +46,9 @@ function doesConnectionExist() {
 	}
 }
 
+function isSmartTV() {
+	return isUserAgent("SMART-TV");
+}
 function isFirefoxOS() {
 	return isUserAgent("Mozilla/5.0 (Mobile; rv:");
 }
@@ -66,6 +69,9 @@ function isIPad() {
 }
 function isAppleMobile() {
 	return isIPhone() || isIPod() || isIPad();
+}
+function isMobileDevice() {
+	return isAppleMobile() || isFirefoxOS() || isWindowsPhone() || isAndroidOS();
 }
 
 function isUserAgent(userAgentString) {
