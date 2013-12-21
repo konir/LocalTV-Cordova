@@ -1,18 +1,9 @@
-function alertBox(text) {
-	var iframe = document.createElement("IFRAME");
-	iframe.setAttribute("src", 'data:text/plain,');
-	document.documentElement.appendChild(iframe);
-	window.frames[0].window.alert(text);
-	iframe.parentNode.removeChild(iframe);
-}
-
 /* Get URL Parameter */
 function gup(name) {
 	name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
 	var regexS = "[\\?&]" + name + "=([^&#]*)";
 	var regex = new RegExp(regexS);
 	var results = regex.exec(window.location.href);
-	// alert(results);
 	if (results == null) {
 		return "";
 	} else {
@@ -26,8 +17,7 @@ function checkInternetConnection() {
 		// alert('connected');
 		return true;
 	} else {
-		alertBox('Sie sind nicht mit dem Internet verbunden!');
-		// alert('Sie sind nicht mit dem Internet verbunden!');
+		alert('Sie sind nicht mit dem Internet verbunden!');
 		return false;
 	}
 }
@@ -44,17 +34,62 @@ function doesConnectionExist() {
 		xhr.send();
 
 		if (xhr.status >= 200 && xhr.status < 304) {
-			alert('Connected !!!');
+			// alert('Connected !!!');
 			return true;
 		} else {
-			alert('NOT Connected !!!');
+			// alert('NOT Connected !!!');
 			return false;
 		}
 	} catch (e) {
-		alert('NOT Connected - with exception !!: ' + e);
+		// alert('NOT Connected - with exception !!: '+e);
 		return false;
 	}
 }
+
+function isSmartTV() {
+	return isUserAgent("SMART-TV");
+}
+function isFirefoxOS() {
+	return isUserAgent("Mozilla/5.0 (Mobile; rv:");
+}
+function isWindowsPhone() {
+	return isUserAgent("Windows Phone");
+}
+function isAndroidOS() {
+	return isUserAgent("Android");
+}
+function isIPhone() {
+	return isUserAgent("iPhone");
+}
+function isIPod() {
+	return isUserAgent("iPod");
+}
+function isIPad() {
+	return isUserAgent("iPad");
+}
+function isAppleMobile() {
+	return isIPhone() || isIPod() || isIPad();
+}
+function isMobileDevice() {
+	return isAppleMobile() || isFirefoxOS() || isWindowsPhone() || isAndroidOS();
+}
+
+function isUserAgent(userAgentString) {
+	var userAgent = navigator.userAgent;
+	// alert(userAgent);
+	if (userAgent.indexOf(userAgentString) != -1) {
+		return true;
+	}
+	return false;
+}
+
+// function alertBox(text) {
+// var iframe = document.createElement("IFRAME");
+// iframe.setAttribute("src", 'data:text/plain,');
+// document.documentElement.appendChild(iframe);
+// window.frames[0].window.alert(text);
+// iframe.parentNode.removeChild(iframe);
+// }
 
 function getCountry() {
 	if (navigator.geolocation) {

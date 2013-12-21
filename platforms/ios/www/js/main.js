@@ -18,9 +18,9 @@ LocalTVApp.stations.createStation("./img/tele_zueri.png", "Tele Züri", "http://
 LocalTVApp.stations.createStation("./img/tele1.png", "Tele 1",
 		"http://rrr.sz.xlcdn.com/?account=ZentralschweizerFernsehenTele1AG&file=live-mbr-2500&type=live&service=wowza&protocol=http&output=playlist.m3u8", "CH");
 LocalTVApp.stations.createStation("./img/tele_ostschweiz.png", "Tele Ostschweiz", "http://rtmp.infomaniak.ch/livecast/tvo/playlist.m3u8", "CH");
-//LocalTVApp.stations.createStation("./img/srf_1.png", "SRF 1", "http://www.srf.ch/player/tv/videoembed?id=c4927fcf-e1a0-0001-7edd-1ef01d441651&autoplay=true", "CH");
-// LocalTVApp.stations.createStation("./img/srf_2.png", "SRF 2", "http://www.srf.ch/player/tv/videoembed?id=c49c1d64-9f60-0001-1c36-43c288c01a10&autoplay=true", "CH");
-// LocalTVApp.stations.createStation("./img/srf_info.png", "SRF Info", "http://www.srf.ch/player/tv/videoembed?id=c49c1d73-2f70-0001-138a-15e0c4ccd3d0&autoplay=true", "CH");
+LocalTVApp.stations.createStation("./img/srf_1.png", "SRF 1", "http://www.srf.ch/player/tv/videoembed?id=c4927fcf-e1a0-0001-7edd-1ef01d441651&autoplay=true", "CH");
+LocalTVApp.stations.createStation("./img/srf_2.png", "SRF 2", "http://www.srf.ch/player/tv/videoembed?id=c49c1d64-9f60-0001-1c36-43c288c01a10&autoplay=true", "CH");
+LocalTVApp.stations.createStation("./img/srf_info.png", "SRF Info", "http://www.srf.ch/player/tv/videoembed?id=c49c1d73-2f70-0001-138a-15e0c4ccd3d0&autoplay=true", "CH");
 LocalTVApp.stations.createStation("./img/telebielingue.png", "Tele Bielingue", "http://rtmp.infomaniak.ch/livecast/telebielinguech/playlist.m3u8", "CH");
 LocalTVApp.stations.createStation("./img/kanal9.png", "Canal 9", "http://httpstream.canal9.ch/canal9live.m3u8", "CH");
 LocalTVApp.stations.createStation("./img/canal_alpha.png", "Canal Alpha NE", "http://rtmp.infomaniak.ch/livecast/canalalpha/playlist.m3u8", "CH");
@@ -55,6 +55,10 @@ LocalTVApp.stations.createStation("./img/rbb_tv.png", "RBB Berlin", "http://rbb_
 LocalTVApp.stations.createStation("./img/tv_suedbaden.png", "TV Südbaden", "http://tvsuedbaden.iptv-playoutcenter.de:1935/tvsuedbaden/tvsuedbaden.stream_2/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/trp1_fernsehen.png", "TRP1", "http://stream2.telvi.de/trp1live/livestream1/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/dw_tv.png", "DW Europa", "http://dwtvios_europa-i.akamaihd.net/hls/live/200515/dwtveuropa/1/playlist1x.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/dw_tv.png", "DW America", "http://www.metafilegenerator.de/DWelle/tv-northamerica/ios/master.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/dw_tv.png", "DW Asia", "http://www.metafilegenerator.de/DWelle/tv-asia/ios/master.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/dw_tv.png", "DW Arabia", "http://www.metafilegenerator.de/DWelle/tv-arabia/ios/master.m3u8", "DE");
+LocalTVApp.stations.createStation("./img/dw_tv.png", "DW Latinoamerica", "http://www.metafilegenerator.de/DWelle/tv-latinoamerica/ios/master.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/pearl_tv.png", "Pearl TV", "http://enstyle-i.akamaihd.net/hls/live/203253/live/index.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/astro_tv.png", "Astro TV", "http://178.63.71.23/astrotv/astrotv1/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/qvc.png", "QVC", "http://ios-stream.qvc.de/qvc.m3u8", "DE");
@@ -70,7 +74,7 @@ LocalTVApp.stations.createStation("./img/leipzig_tv.png", "Leipzig Fernsehen", "
 LocalTVApp.stations.createStation("./img/oberfranken_tv.png", "TV Oberfranken", "http://tvoberfranken.iptv-playoutcenter.de:1935/tvoberfranken/tvoberfranken_1/playlist.m3u8", "DE");
 // LocalTVApp.stations.createStation("./img/oberfranken_tv.png", "TV Oberfranken 2", "http://tvoberfranken.iptv-playoutcenter.de:1935/tvoberfranken/tvoberfranken_2/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/franken_fernsehen.png", "Franken TV", "http://frankentv.iptv-playoutcenter.de:1935/frankentv/frankentv.stream_1/playlist.m3u8", "DE");
-// LocalTVApp.stations.createStation("./img/bw_family.png", "BW Family TV", "http://www.bwfamily.tv/iphone", "DE");
+LocalTVApp.stations.createStation("./img/bw_family.png", "BW Family TV", "http://www.bwfamily.tv/iphone", "DE");
 LocalTVApp.stations.createStation("./img/light_channel.png", "Light Channel TV", "http://streamer1.streamhost.org:1935/salive/lctvde/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/tv_touring.png", "TV Touring Würzburg", "http://tvtouringw.iptv-playoutcenter.de:1935/tvtouringw/tvtouringw.stream_2/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/tv_touring.png", "TV Touring Schweinfurt", "http://tvtourings.iptv-playoutcenter.de:1935/tvtourings/tvtourings.stream_2/playlist.m3u8", "DE");
@@ -90,10 +94,10 @@ LocalTVApp.stations.createStation("./img/center.png", "Center TV Köln",
 		"http://x3282azmediac12001.f.l.z.lb.core-cdn.net/10894xkoeln/_definst_/12001centertvkoeln/live/3282azmedia/live_de_300/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/center.png", "Center TV Münster", "http://mf.centertv.c.nmdn.net/centertv/centertv.stream/playlist.m3u8", "DE");
 LocalTVApp.stations.createStation("./img/deluxe.png", "Deluxe Music", "http://flash.cdn.deluxemusic.tv/deluxemusic.tv-live/web_850.stream/playlist.m3u8", "DE");
-
-// Wdr maus. http:// www.wdrmaus.de/aktuelle-sendung/
-// Ard tagesschau live stream. http:// www.tagesschau.de/templates/pages/multimedia/livestream_player.jsp
-// Kika plus net. http:// kikaplus.net/clients/kika/kikaplus/mobile/index.php
+LocalTVApp.stations.createStation("./img/maus.png", "Sendung mit der Maus", "http://www.wdrmaus.de/aktuelle-sendung", "DE");
+LocalTVApp.stations.createStation("./img/kika.png", "KiKa", "http://kikaplus.net/clients/kika/player/tvplayer.php", "DE");
+LocalTVApp.stations.createStation("./img/ard_tagesschau.png", "ARD tagesschau.de (Live)", "http://www.tagesschau.de/templates/pages/multimedia/livestream_player.jsp", "DE");
+LocalTVApp.stations.createStation("./img/ard_tagesschau.png", "ARD Tagesschau in 100 Sekunden", "http://www.tagesschau.de/multimedia/video/video1360904~player_autoplay-true.html", "DE");
 
 // ----------------------------------------------------------------------
 // Österreich
@@ -102,15 +106,39 @@ LocalTVApp.stations.createStation("./img/okto_tv.png", "OKTO TV", "http://atwse.
 LocalTVApp.stations.createStation("./img/w24_wien.png", "W24", "http://212.186.194.254/hls-live/livepkgr/_definst_/liveevent.m3u8", "AT");
 LocalTVApp.stations.createStation("./img/austria24tv.png", "Austria 24", "http://streaming.austria24.tv/live/stream_240p/playlist.m3u8", "AT");
 LocalTVApp.stations.createStation("./img/red_bull_tv.png", "RedBull TV", "http://live.iphone.redbull.de.edgesuite.net/iphone.m3u8", "AT");
-// LocalTVApp.stations.createStation("./img/muehlviertel_tv.png", "Mühlviertel TV", "http://muehlviertel.tv/live", "AT");
+LocalTVApp.stations.createStation("./img/muehlviertel_tv.png", "Mühlviertel TV", "http://muehlviertel.tv/live", "AT");
 
 // ----------------------------------------------------------------------
 // Other countrie
 // ----------------------------------------------------------------------
 
 LocalTVApp.stations.createStation("./img/suedtirol_tv.png", "Südtirol TV", "http://77.72.196.214:8554/live/SuedtirolTV/playlist.m3u8", "Div");
-//LocalTVApp.stations.createStation("./img/nasa_tv.png", "NASA TV", "http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8", "Div");
+LocalTVApp.stations.createStation("./img/nasa_tv.png", "NASA TV", "http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8", "Div");
 LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg USA", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/BnazlkNDpCIcD-QkfyZCQKlRiiFnVa5I/master.m3u8", "Div");
 LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg ASIA", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/w4dTdlNToKUvtqJ1WMDu5IuNP9as1iF0/master.m3u8", "Div");
 LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg EU", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/x0dDdlNTrs64I5H-29bfEFu4qeIira5r/master.m3u8", "Div");
 LocalTVApp.stations.createStation("./img/al_jazeera.png", "Al-Jazeera EN", "http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/appleman.m3u8?dev=website", "Div");
+
+function fillSmartTvExcludeList() {
+	excludeArray = new Array();
+	excludeArray.push("ARD Das Erste");
+	excludeArray.push("Hamburg 1");
+	excludeArray.push("TRP1");
+	excludeArray.push("Pearl TV");
+	excludeArray.push("QVC");
+	excludeArray.push("WDR");
+	excludeArray.push("MDR Sachsen");
+	excludeArray.push("MDR Sachsen-Anhalt");
+	excludeArray.push("MDR Thüringen");
+	excludeArray.push("DW Europa");
+	excludeArray.push("DW Arabia");
+	excludeArray.push("DW America");
+	excludeArray.push("DW Asia");
+	excludeArray.push("NASA TV");
+	excludeArray.push("Bloomberg USA");
+	excludeArray.push("Bloomberg ASIA");
+	excludeArray.push("Bloomberg EU");
+	excludeArray.push("Al-Jazeera EN");
+	console.log("*** fillSmartTvExcludeList");
+	return excludeArray;
+}

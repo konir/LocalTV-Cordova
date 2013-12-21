@@ -94,7 +94,7 @@
     // Available AdSize constants are explained in GADAdSize.h.
         bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
     
-    [bannerView_ setFrame:CGRectMake(0,
+/*    [bannerView_ setFrame:CGRectMake(0,
                                      0,
                                      bannerView_.bounds.size.width,
                                      bannerView_.bounds.size.height)];
@@ -111,7 +111,7 @@
     
     // Initiate a generic request to load it with an ad.
     [bannerView_ loadRequest:[GADRequest request]];
-
+*/
 }
 
 - (void)viewDidUnload

@@ -1,0 +1,20 @@
+{
+    "version":"0.1",
+        "name": "LocalTV",
+    "description": "Mit LocalTV können sie viele Lokal-, Sparten- öffentlich-rechtliche Fernseh Sender schauen.",
+    "launch_path": "/index.html",
+        "fullscreen": "false",
+    "icons": {
+        "32": "http://koni.mobi/localtv/ico/localtv-32.png",
+        "60": "http://koni.mobi/localtv/ico/localtv-60.png",
+        "90": "http://koni.mobi/localtv/ico/localtv-90.png",
+        "120": "http://koni.mobi/localtv/ico/localtv-120.png",
+        "128": "http://koni.mobi/localtv/ico/localtv-128.png",
+        "256": "http://koni.mobi/localtv/ico/localtv-256.png"
+    },
+        "developer": {
+        "name": "Koni",
+        "url": "http://localtv.koni.mobi"
+    },
+    "default_locale": "de"
+}
