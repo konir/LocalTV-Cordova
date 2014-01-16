@@ -98,6 +98,7 @@ LocalTVApp.stations.createStation("./img/maus.png", "Sendung mit der Maus", "htt
 LocalTVApp.stations.createStation("./img/kika.png", "KiKa", "http://kikaplus.net/clients/kika/player/tvplayer.php", "DE");
 LocalTVApp.stations.createStation("./img/ard_tagesschau.png", "ARD tagesschau.de (Live)", "http://www.tagesschau.de/templates/pages/multimedia/livestream_player.jsp", "DE");
 LocalTVApp.stations.createStation("./img/ard_tagesschau.png", "ARD Tagesschau in 100 Sekunden", "http://www.tagesschau.de/multimedia/video/video1360904~player_autoplay-true.html", "DE");
+LocalTVApp.stations.createStation("./img/manou_lenz_tv.png", "Manou Lenz", "http://mltv-i.akamaihd.net/hls/live/215727/MLTV_HLS/index.m3u8", "DE");
 
 // ----------------------------------------------------------------------
 // Österreich
@@ -107,17 +108,21 @@ LocalTVApp.stations.createStation("./img/w24_wien.png", "W24", "http://212.186.1
 LocalTVApp.stations.createStation("./img/austria24tv.png", "Austria 24", "http://streaming.austria24.tv/live/stream_240p/playlist.m3u8", "AT");
 LocalTVApp.stations.createStation("./img/red_bull_tv.png", "RedBull TV", "http://live.iphone.redbull.de.edgesuite.net/iphone.m3u8", "AT");
 LocalTVApp.stations.createStation("./img/muehlviertel_tv.png", "Mühlviertel TV", "http://muehlviertel.tv/live", "AT");
+LocalTVApp.stations.createStation("./img/p3_tv.png", "P3tv", "http://p3-6.mov.at:1935/live/weekstream/playlist.m3u8", "AT");
 
 // ----------------------------------------------------------------------
 // Other countrie
 // ----------------------------------------------------------------------
 
-LocalTVApp.stations.createStation("./img/suedtirol_tv.png", "Südtirol TV", "http://77.72.196.214:8554/live/SuedtirolTV/playlist.m3u8", "Div");
-LocalTVApp.stations.createStation("./img/nasa_tv.png", "NASA TV", "http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8", "Div");
-LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg USA", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/BnazlkNDpCIcD-QkfyZCQKlRiiFnVa5I/master.m3u8", "Div");
-LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg ASIA", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/w4dTdlNToKUvtqJ1WMDu5IuNP9as1iF0/master.m3u8", "Div");
-LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg EU", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/x0dDdlNTrs64I5H-29bfEFu4qeIira5r/master.m3u8", "Div");
-LocalTVApp.stations.createStation("./img/al_jazeera.png", "Al-Jazeera EN", "http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/appleman.m3u8?dev=website", "Div");
+// LocalTVApp.stations.createStation("./img/suedtirol_tv.png", "Südtirol TV", "http://77.72.196.214:8554/live/SuedtirolTV/playlist.m3u8", "Div");
+// LocalTVApp.stations.createStation("./img/nasa_tv.png", "NASA TV", "http://www.nasa.gov/multimedia/nasatv/NTV-Public-IPS.m3u8", "Div");
+// LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg USA", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/BnazlkNDpCIcD-QkfyZCQKlRiiFnVa5I/master.m3u8",
+// "Div");
+// LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg ASIA", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/w4dTdlNToKUvtqJ1WMDu5IuNP9as1iF0/master.m3u8",
+// "Div");
+// LocalTVApp.stations.createStation("./img/bloomberg_tv.png", "Bloomberg EU", "http://live.bltvios.com.edgesuite.net/oza2w6q8gX9WSkRx13bskffWIuyf/x0dDdlNTrs64I5H-29bfEFu4qeIira5r/master.m3u8",
+// "Div");
+// LocalTVApp.stations.createStation("./img/al_jazeera.png", "Al-Jazeera EN", "http://aljazeera-eng-apple-live.adaptive.level3.net/apple/aljazeera/english/appleman.m3u8?dev=website", "Div");
 
 function fillSmartTvExcludeList() {
 	excludeArray = new Array();
@@ -139,6 +144,7 @@ function fillSmartTvExcludeList() {
 	excludeArray.push("Bloomberg ASIA");
 	excludeArray.push("Bloomberg EU");
 	excludeArray.push("Al-Jazeera EN");
+	excludeArray.push("Manou Lenz");
 	console.log("*** fillSmartTvExcludeList");
 	return excludeArray;
 }
