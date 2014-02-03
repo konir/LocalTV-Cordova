@@ -29,6 +29,7 @@ LocalTVApp.stations.createStation("./img/la_tele.png", "La Tele", "http://rtmp.i
 LocalTVApp.stations.createStation("./img/rts_un.png", "RTS un", "https://srgssr_uni_9_ch-lh.akamaihd.net/i/enc9uni_ch@112904/master.m3u8", "CH");
 LocalTVApp.stations.createStation("./img/rts_deux.png", "RTS deux", "https://srgssr_uni_10_ch-lh.akamaihd.net/i/enc10uni_ch@112993/master.m3u8", "CH");
 LocalTVApp.stations.createStation("./img/rts_info.png", "RTS Info", "http://srgssr_uni_11_ww-lh.akamaihd.net/i/enc11uni_ww@112996/master.m3u8", "CH");
+LocalTVApp.stations.createStation("./img/nrj_tv.png", "Energy TV", "http://rtmp.infomaniak.ch/livecast/energytv/playlist.m3u8", "CH");
 LocalTVApp.stations.createStation("./img/tvm3.png", "TVM3", "http://rtmp.infomaniak.ch/livecast/tvm3/playlist.m3u8", "CH");
 LocalTVApp.stations.createStation("./img/rouge_tv.png", "Rouge TV", "http://rtmp.infomaniak.ch/livecast/rougetv/playlist.m3u8", "CH");
 LocalTVApp.stations.createStation("./img/radio_pilatus.png", "Radio Pilatus", "http://video.radiopilatus.ch:443/rtplive/cam1.stream/playlist.m3u8", "CH");
