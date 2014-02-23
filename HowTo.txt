@@ -1,5 +1,7 @@
 Install:
 --------
+sudo -s koni --> Admin in console
+
 npm install -g cordova
 
 

@@ -98,7 +98,7 @@ LocalTVApp.stations.createStation("./img/deluxe.png", "Deluxe Music", "http://fl
 LocalTVApp.stations.createStation("./img/maus.png", "Sendung mit der Maus", "http://www.wdrmaus.de/aktuelle-sendung", "DE");
 LocalTVApp.stations.createStation("./img/kika.png", "KiKa", "http://kikaplus.net/clients/kika/player/tvplayer.php", "DE");
 LocalTVApp.stations.createStation("./img/ard_tagesschau.png", "ARD tagesschau.de (Live)", "http://www.tagesschau.de/templates/pages/multimedia/livestream_player.jsp", "DE");
-LocalTVApp.stations.createStation("./img/ard_tagesschau.png", "ARD Tagesschau in 100 Sekunden", "http://www.tagesschau.de/multimedia/video/video1360904~player_autoplay-true.html", "DE");
+LocalTVApp.stations.createStation("./img/ard_tagesschau.png", "ARD Tagesschau in 100 Sekunden", "http://www.tagesschau.de/100sekunden/index.html", "DE");
 LocalTVApp.stations.createStation("./img/manou_lenz_tv.png", "Manou Lenz", "http://mltv-i.akamaihd.net/hls/live/215727/MLTV_HLS/index.m3u8", "DE");
 
 // ----------------------------------------------------------------------
@@ -110,6 +110,11 @@ LocalTVApp.stations.createStation("./img/austria24tv.png", "Austria 24", "http:/
 LocalTVApp.stations.createStation("./img/red_bull_tv.png", "RedBull TV", "http://live.iphone.redbull.de.edgesuite.net/iphone.m3u8", "AT");
 LocalTVApp.stations.createStation("./img/muehlviertel_tv.png", "Mühlviertel TV", "http://muehlviertel.tv/live", "AT");
 LocalTVApp.stations.createStation("./img/p3_tv.png", "P3tv", "http://p3-6.mov.at:1935/live/weekstream/playlist.m3u8", "AT");
+LocalTVApp.stations.createStation("./img/orf.png", "ORF 1", "http://apasfiisl.apa.at/ipad/orf1x_q4a/orf.sdp/playlist.m3u8", "AT");
+LocalTVApp.stations.createStation("./img/orf.png", "ORF 2", "http://apasfiisl.apa.at/ipad/orf2x_q4a/orf.sdp/playlist.m3u8", "AT");
+LocalTVApp.stations.createStation("./img/orf.png", "ORF 3", "http://apasfiisl.apa.at/ipad/orf3x_q4a/orf.sdp/playlist.m3u8", "AT");
+LocalTVApp.stations.createStation("./img/orf.png", "ORF Sport", "http://apasfiisl.apa.at/ipad/orfsx_q4a/orf.sdp/playlist.m3u8", "AT");
+LocalTVApp.stations.createStation("./img/orf.png", "ORF Europe", "http://apasfiisl.apa.at/ipad/orf2e_q4a/orf.sdp/playlist.m3u8", "AT");
 
 // ----------------------------------------------------------------------
 // Other countrie
